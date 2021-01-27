@@ -54,7 +54,7 @@ More recently, in the context of COVID he has been working on the prediction of 
 Dr. Yugang Jia is a data science manager in Verily Life Sciences (formerly known as Google Life Sciences) , where he joined in 2020. He obtained his Ph.D. degree in Electrical and Electronic Engineering from University of Bristol, UK, in 2007. He was VP of healthcare data science at Fidelity Investments from 2017-2019 and senior scientist/innovation lead at Philips Research from 2007 to 2017. His research interests are mainly in data science/artificial intelligence and their application in digital health and clinical informatics.
 
 ### Eric Gottlieb
-<img src="Headshot_Pictures/Eric.jpg" width="324" height="324">
+<img src="Headshot_Pictures/eric.png" width="324" height="324">
 
 Eric Gottlieb is a second-year nephrology fellow at Brigham and Women's Hospital and lecturer with the Laboratory for Computational Physiology. Originally from Baltimore, MD, he studied business as an undergraduate at Emory University. He then completed a master's degree in molecular medicine and medical school at the University of Maryland. He completed his internal medicine residency at Brown University/Rhode Island Hospital.  His current research focuses on predicting and optimizing outcomes in continuous renal replacement therapy. In addition to his role in .936/.938, he precepts for the HST clinical experience at Mount Auburn Hospital.
 
