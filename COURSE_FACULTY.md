@@ -26,6 +26,9 @@ Kenneth Paik is a clinical informatician driving quality improvement and democra
 
 ### Umbereen Nehal
 
+
+Umbereen S. Nehal, MD, MPH is a Sloan Fellow at MIT, a former Medicaid medical director, and a former Chief Medical Officer for a 14-center community health organization in NYC. Educated at Aga Khan University, Baylor College of Medicine, and Harvard School of Public Health, she has been named a “Top Voice” four times by LinkedIn. Dr. Nehal was clinical lead for $1.8b in new funding for Medicaid reform to value-based care. She was recognized by President Obama for a healthcare enrollment campaign for the White House. Dr. Nehal is published in the area of quality improvement, business models for AI in healthcare, refugee health, and medical education for patient-centered care. 
+
 ### Grace Charles
 
 ### Joel Park
