@@ -25,7 +25,7 @@ Jay is a junior at Harvard College studying Statistics & Molecular and Cellular 
 Kenneth Paik is a clinical informatician driving quality improvement and democratizing access through technology innovation, combining a multidisciplinary background in medicine, artificial intelligence, business management, and technology strategy. He is a research scientist at the MIT Laboratory for Computational Physiology investigating the secondary analysis of health data and building intelligent decision support systems.
 
 ### Umbereen Nehal
-<img src="Headshot_Pictures/Umbreen.jpeg" width="324" height="324">
+<img src="Headshot_Pictures/Umbreen.jpeg" width="400" height="300">
 
 Umbereen S. Nehal, MD, MPH is a Sloan Fellow at MIT, a former Medicaid medical director, and a former Chief Medical Officer for a 14-center community health organization in NYC. Educated at Aga Khan University, Baylor College of Medicine, and Harvard School of Public Health, she has been named a “Top Voice” four times by LinkedIn. Dr. Nehal was clinical lead for $1.8b in new funding for Medicaid reform to value-based care. She was recognized by President Obama for a healthcare enrollment campaign for the White House. Dr. Nehal is published in the area of quality improvement, business models for AI in healthcare, refugee health, and medical education for patient-centered care. 
 
