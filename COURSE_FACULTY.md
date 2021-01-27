@@ -48,14 +48,14 @@ More recently, in the context of COVID he has been working on the prediction of 
 
 Dr. Yugang Jia is a data science manager in Verily Life Sciences (formerly known as Google Life Sciences) , where he joined in 2020. He obtained his Ph.D. degree in Electrical and Electronic Engineering from University of Bristol, UK, in 2007. He was VP of healthcare data science at Fidelity Investments from 2017-2019 and senior scientist/innovation lead at Philips Research from 2007 to 2017. His research interests are mainly in data science/artificial intelligence and their application in digital health and clinical informatics.
 
-### Saketh Sundar
-<img src="Headshot_Pictures/saketh.jpg" width="300" height="350">
-
-Saketh Sundar is a research intern at MIT Laboratory of Computational Physiology. Under the mentorship of Mr. Nicolas Della Penna and Dr. Leo Celi, he is collaborating with research scientists from MIT, Harvard, and around the world on a few projects. Recently he worked on a COVID-19 forecasting project hosted by the Center for Disease Control and Prevention, which involved forecasting the number of COVID-19 cases and deaths across counties in the United States using a large diverse set of time-varying features. He is also an active member in projects including COVID-19 excess mortality analysis and prediction of Dengue vulnerability in Colombia using satellite images. His research interests are mainly in data science/artificial intelligence and their application in public health and bioinformatics. He is a student at River Hill High School, Clarksville, MD.
-
 ### Eric Gottlieb
 
 ### Sreekar Mantena
 
 ### Anushka Bhaskar
+
+### Saketh Sundar
+<img src="Headshot_Pictures/saketh.jpg" width="300" height="350">
+
+Saketh Sundar is a research intern at MIT Laboratory of Computational Physiology. Under the mentorship of Mr. Nicolas Della Penna and Dr. Leo Celi, he is collaborating with research scientists from MIT, Harvard, and around the world on a few projects. Recently he worked on a COVID-19 forecasting project hosted by the Center for Disease Control and Prevention, which involved forecasting the number of COVID-19 cases and deaths across counties in the United States using a large diverse set of time-varying features. He is also an active member in projects including COVID-19 excess mortality analysis and prediction of Dengue vulnerability in Colombia using satellite images. His research interests are mainly in data science/artificial intelligence and their application in public health and bioinformatics. He is a student at River Hill High School, Clarksville, MD.
 
