@@ -7,6 +7,7 @@ This year, the focus will be on analysis of county-level excess mortality data t
 - [Course Website](https://criticaldata.mit.edu/course/)
 - [Course Schedule](SCHEDULE.md)
 - [Course Projects](PROJECTS.md)
+- [Course Faculty](COURSE_FACULTY.md)
 
 ## Requirements & Grading
 
