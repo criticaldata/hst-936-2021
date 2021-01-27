@@ -1,5 +1,7 @@
 # Course Faculty Information
-### Leo Celi <img src="Headshot_Pictures/leo.jpg" width="324" height="324">
+### Leo Celi 
+<img src="Headshot_Pictures/leo.jpg" width="324" height="324">
+
 ### Maia Majumder
 <img src="Headshot_Pictures/Majumder_Maia.jpg" width="250" height="350">
 ### Marie-Laure Charpignon
