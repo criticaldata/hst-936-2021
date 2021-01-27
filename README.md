@@ -8,13 +8,11 @@ This year, the focus will be on analysis of county-level excess mortality data t
 - [Course Schedule](SCHEDULE.md)
 - [Course Projects](PROJECTS.md)
 
-## Requirements
+## Requirements & Grading
 
-- Class Attendance
-- Course edX
-- CITI Training
-- Project Work
-- Project Deliverables
+- Class Attendance, Participation, Professionalism & Teamwork (25%)
+- edX Course Completion (Exercises & quizzes) (25%)
+- Course Project Deliverables (Midterm Report & Final Presentation and GitHub Repo) (50%)
 
 ## Timeline & Deliverables
 
@@ -25,3 +23,5 @@ This year, the focus will be on analysis of county-level excess mortality data t
 - Final Presentation ()
 - Final Report ()
 - Final Project Repository ()
+
+## Course Faculty & Mentors
