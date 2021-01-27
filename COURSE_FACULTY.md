@@ -14,12 +14,15 @@ Dr. Maimuna (Maia) Majumder is a member of the Computational Health Informatics 
 ### Jay Chandra
 <img src="Headshot_Pictures/Jay.png" width="324" height="324">
 
+Jay is a junior at Harvard College studying Statistics & Molecular and Cellular Biology. During his time in undergrad, Jay has been involved in many projects related to medical technology, computational neuroscience, and bioinformatics. He has extensive experience with the mortality data that will be used in HST 936 and is a co-lead on the preliminary project that was the inspiration of the course (Evaluation of County-Level Heterogeneity in Excess Mortality in Colorado)
+
+
 ### Mat Samuel
 
 ### Kenneth Paik
-Kenneth Paik is a clinical informatician driving quality improvement and democratizing access through technology innovation, combining a multidisciplinary background in medicine, artificial intelligence, business management, and technology strategy. He is a research scientist at the MIT Laboratory for Computational Physiology investigating the secondary analysis of health data and building intelligent decision support systems.
-
 <img src="Headshot_Pictures/ken.jpg" width="324" height="324">
+
+Kenneth Paik is a clinical informatician driving quality improvement and democratizing access through technology innovation, combining a multidisciplinary background in medicine, artificial intelligence, business management, and technology strategy. He is a research scientist at the MIT Laboratory for Computational Physiology investigating the secondary analysis of health data and building intelligent decision support systems.
 
 ### Umbereen Nehal
 
