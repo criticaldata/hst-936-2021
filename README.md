@@ -24,5 +24,3 @@ This year, the focus will be on analysis of county-level excess mortality data t
 - Final Presentation ()
 - Final Report ()
 - Final Project Repository ()
-
-## Course Faculty & Mentors
