@@ -1,2 +1,3 @@
 # Course Faculty Information
-![Leo](Headshot_Pictures/leo.jpg?raw=true "Title"){:height="36px" width="36px"}.
+![Leo](Headshot_Pictures/leo.jpg?raw=true "Title")
+<img src="Headshot_Pictures/leo.jpg" width="324" height="324">
