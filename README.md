@@ -18,10 +18,10 @@ This year, the focus will be on analysis of county-level excess mortality data t
 
 ## Timeline & Deliverables
 
-- Project Selections Due (February 27th)
-- Project Teams Announced (March 3rd)
-- Draft Proposal (March 12th)
-- Final Proposal (March 19th)
+- Project Selections Due (February 27)
+- Project Teams Announced (March 3)
+- Draft Proposal (March 12)
+- Final Proposal (March 19)
 - Final Presentation (May 14)
 - Final Report (May 21)
 - Final Project Repository (May 21)
