@@ -29,6 +29,9 @@ Kenneth Paik is a clinical informatician driving quality improvement and democra
 Umbereen S. Nehal, MD, MPH is a Sloan Fellow at MIT, a former Medicaid medical director, and a former Chief Medical Officer for a 14-center community health organization in NYC. Educated at Aga Khan University, Baylor College of Medicine, and Harvard School of Public Health, she has been named a “Top Voice” four times by LinkedIn. Dr. Nehal was clinical lead for $1.8b in new funding for Medicaid reform to value-based care. She was recognized by President Obama for a healthcare enrollment campaign for the White House. Dr. Nehal is published in the area of quality improvement, business models for AI in healthcare, refugee health, and medical education for patient-centered care. 
 
 ### Grace Charles
+<img src="Headshot_Pictures/grace.png" width="450" height="300">
+
+Grace Charles is a Research Scientist at Surgo Ventures. She integrates behavioral science, machine learning, and data science to generate insights that improve human well-being. As a Research Scientist, Grace supports many of Surgo’s research activities, including leading analyses, developing data collection and analytical methods, and designing interventions to transform health behaviors. She is passionate about translating scientific findings into interpretable and actionable insights and strongly believes in the power of interdisciplinary research. Prior to joining Surgo, Grace received her PhD in Ecology from University of California, Davis and an AB in Biology from Harvard University.
 
 ### Joel Park
 <img src="Headshot_Pictures/joel.png" width="300" height="350">
