@@ -33,7 +33,8 @@ We are looking for students interested in interdisciplinary research, with a bac
 
 ### Title: Association of COVID-19 Excess Mortality with Job Occupation and Outbreak Centers
 
-### Keywords: biostatistics, machine learning, infodemiology
+### Keywords: 
+biostatistics, machine learning, infodemiology
 
 ### Context: 
 The risk for developing COVID-19 is different not only across race, ethnicity, income, education levels, etc. but also across different job occupations. For example, preliminary research has shown that cooks, packaging workers, construction workers, and others have had a higher risk of dying from COVID-19 (here’s a paper that did this for california)
