@@ -6,7 +6,7 @@ This year, the focus will be on analysis of county-level excess mortality data t
 
 For more information, contact course faculty at: hst936faculty@mit.edu
 
-Please fill out this form if you are interested in enrolling in the course: [form](https://docs.google.com/forms/d/e/1FAIpQLSc1owRGhvfiRT8ap5-sZ-7H8CbE0EBS5ccyiOfxTHwJQ4eLlQ/viewform?gxids=7628)
+Please fill out this [form](https://docs.google.com/forms/d/e/1FAIpQLSc1owRGhvfiRT8ap5-sZ-7H8CbE0EBS5ccyiOfxTHwJQ4eLlQ/viewform?gxids=7628) if you are interested in enrolling in the course
 
 
 ## Information
