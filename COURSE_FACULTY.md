@@ -64,6 +64,7 @@ Dr. Yugang Jia is a data science manager in Verily Life Sciences (formerly known
 Eric Gottlieb is a second-year nephrology fellow at Brigham and Women's Hospital and lecturer with the Laboratory for Computational Physiology. Originally from Baltimore, MD, he studied business as an undergraduate at Emory University. He then completed a master's degree in molecular medicine and medical school at the University of Maryland. He completed his internal medicine residency at Brown University/Rhode Island Hospital.  His current research focuses on predicting and optimizing outcomes in continuous renal replacement therapy. In addition to his role in .936/.938, he precepts for the HST clinical experience at Mount Auburn Hospital.
 
 ### Sreekar Mantena
+<img src="Headshot_Pictures/sreekar_mantena.jpg" width="324" height="324"> 
 Sreekar is a Junior at Harvard studying Statistics and Molecular & Cellular Biology. He’s passionate about leveraging data science and machine learning approaches to solve problems in healthcare, and has previously worked on projects in performing risk-stratification and predictive modeling from the electronic health record datasets.
 
 ### Anushka Bhaskar
