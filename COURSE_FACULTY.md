@@ -30,6 +30,23 @@ Kenneth Paik is a clinical informatician driving quality improvement and democra
 
 Umbereen S. Nehal, MD, MPH is a Sloan Fellow at MIT, a former Medicaid medical director, and a former Chief Medical Officer for a 14-center community health organization in NYC. Educated at Aga Khan University, Baylor College of Medicine, and Harvard School of Public Health, she has been named a “Top Voice” four times by LinkedIn. Dr. Nehal was clinical lead for $1.8b in new funding for Medicaid reform to value-based care. She was recognized by President Obama for a healthcare enrollment campaign for the White House. Dr. Nehal is published in the area of quality improvement, business models for AI in healthcare, refugee health, and medical education for patient-centered care. 
 
+
+### Freddie Seba
+<img src="Headshot_Pictures/freddieseba.png" width="300" height="350">
+
+Dr. Seba is a serial tech entrepreneur, experienced corporate executive, innovator, and educator with the highest work ethic. He is at the intersection of fintech, bigtech, and healthtech. He draws his teachings from over twenty-five years of practice in both tech-driven large multinationals and Silicon Valley startups in highly regulated industries, and from a rigorous education at Yale’s and Stanford University’s graduate programs.
+
+He has been teaching as an adjunct professor at the School of Nursing and Health Professions (SONHP) Master In Science Health Informatics (MSHI) for over three years and working as director of industry initiatives.
+
+### Wiliam J. Bosl
+<img src="Headshot_Pictures/dr.williamjbosi.jpg" width="300" height="350">
+
+Dr. William (Bill) Bosl, associate professor of health informatics and clinical psychology at USF, focuses his primary research on clinical neurophysiology and neurodiagnostics. In 2018 Professor Bosl was appointed Visiting Associate Professor of Pediatrics at Harvard Medical School.
+
+Professor Bosl is leading a series of projects to discover patterns in infant EEG signals that can serve as biomarkers for autism and other neurodevelopmental pathology in collaboration with Boston Children’s Hospital (BCH) in developmental medicine. He is also working with neurologists in the BCH Epilepsy clinic to find measures of epileptogenicity or tendency to have epileptic seizures.
+
+Dr. Bosl is working on a crowd-sourcing approach to annotation of clinical EEGs for research for the American Society of Electrodiagnostic Technologists. Other projects involve neurodevelopment in premature infants (with Rutgers Medical School) and the emergence of neurological impairment in Kenyan children following cerebral malaria (with Oxford University).
+
 ### Grace Charles
 <img src="Headshot_Pictures/grace.jpg" width="450" height="300">
 
