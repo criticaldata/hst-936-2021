@@ -39,7 +39,7 @@ Dr. Seba is a serial tech entrepreneur, experienced corporate executive, innovat
 He has been teaching as an adjunct professor at the School of Nursing and Health Professions (SONHP) Master In Science Health Informatics (MSHI) for over three years and working as director of industry initiatives.
 
 ### Wiliam J. Bosl
-<img src="Headshot_Pictures/dr.williamjbosi.jpg" width="300" height="350">
+<img src="Headshot_Pictures/dr.williamjbosl.jpg" width="300" height="350">
 
 Dr. William (Bill) Bosl, associate professor of health informatics and clinical psychology at USF, focuses his primary research on clinical neurophysiology and neurodiagnostics. In 2018 Professor Bosl was appointed Visiting Associate Professor of Pediatrics at Harvard Medical School.
 
