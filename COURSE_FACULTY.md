@@ -32,14 +32,14 @@ Umbereen S. Nehal, MD, MPH is a Sloan Fellow at MIT, a former Medicaid medical d
 
 
 ### Freddie Seba
-<img src="Headshot_Pictures/freddieseba.jpg" width="300" height="350">
+<img src="Headshot_Pictures/freddieseba.jpg" width="350" height="350">
 
 Dr. Seba is a serial tech entrepreneur, experienced corporate executive, innovator, and educator with the highest work ethic. He is at the intersection of fintech, bigtech, and healthtech. He draws his teachings from over twenty-five years of practice in both tech-driven large multinationals and Silicon Valley startups in highly regulated industries, and from a rigorous education at Yale’s and Stanford University’s graduate programs.
 
 He has been teaching as an adjunct professor at the School of Nursing and Health Professions (SONHP) Master In Science Health Informatics (MSHI) for over three years and working as director of industry initiatives.
 
 ### Wiliam J. Bosl
-<img src="Headshot_Pictures/dr.williamjbosl.jpg" width="300" height="350">
+<img src="Headshot_Pictures/dr.williamjbosl.jpg" width="350" height="350">
 
 Dr. William (Bill) Bosl, associate professor of health informatics and clinical psychology at USF, focuses his primary research on clinical neurophysiology and neurodiagnostics. In 2018 Professor Bosl was appointed Visiting Associate Professor of Pediatrics at Harvard Medical School.
 
