@@ -32,7 +32,7 @@ Umbereen S. Nehal, MD, MPH is a Sloan Fellow at MIT, a former Medicaid medical d
 
 
 ### Freddie Seba
-<img src="Headshot_Pictures/freddieseba.png" width="300" height="350">
+<img src="Headshot_Pictures/freddieseba.jpg" width="300" height="350">
 
 Dr. Seba is a serial tech entrepreneur, experienced corporate executive, innovator, and educator with the highest work ethic. He is at the intersection of fintech, bigtech, and healthtech. He draws his teachings from over twenty-five years of practice in both tech-driven large multinationals and Silicon Valley startups in highly regulated industries, and from a rigorous education at Yale’s and Stanford University’s graduate programs.
 
