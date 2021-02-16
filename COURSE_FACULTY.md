@@ -19,8 +19,8 @@ Marie is a PhD student in the Interdisciplinary Doctoral Program in Statistics a
 Jay is a junior at Harvard College studying Statistics & Molecular and Cellular Biology. During his time in undergrad, Jay has been involved in many projects related to medical technology, computational neuroscience, and bioinformatics. He has extensive experience with the mortality data that will be used in HST 936 and is a co-lead on the preliminary project that was the inspiration of the course (Evaluation of County-Level Heterogeneity in Excess Mortality in Colorado)
 
 ### Mat Samuel
-<img src="Headshot_Pictures/mat.jpg" width="324" height="324">
-Mathew is a Research Data Scientist at Facebook where he applies machine learning methods to Facebook’s infrastructure. He completed a Master’s in Health Data Science at the Harvard T.H. Chan School of Public Health and continues to tackle challenges in how to use data for public health and clinical decision making with MIT Critical Data. Previously, Mathew worked as a management consultant, where he helped federal and nonprofit clients more effectively use data in a mix of roles across strategy, operations and analytics. He’s particularly excited for the increasing application of machine learning to healthcare and is interested in bridging the gap between research and practice.
+<img src="Headshot_Pictures/mat.jpg" width="500" height="333">
+Mathew is a Research Data Scientist at Facebook where he applies machine learning methods to Facebook’s infrastructure. He completed a Master’s in Health Data Science at the Harvard T.H. Chan School of Public Health and continues to tackle challenges in how to use data for public health and clinical decision making with MIT Critical Data. Previously, Mathew worked as a management consultant, where he helped federal and nonprofit clients more effectively use data in a mix of roles across strategy, operations and analytics. He’s particularly excited for the increasing application of machine learning to health and is interested in bridging the gap between research and practice.
 
 ### Kenneth Paik
 <img src="Headshot_Pictures/ken.jpg" width="324" height="324">
