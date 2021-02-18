@@ -2,7 +2,7 @@
 
 > First class is Friday February 18 @ 9am on Zoom
 > 
-> Email hst936facutly@mit.edu for the registration link
+> Registration link here: https://mit.zoom.us/meeting/register/tJEtde6trTMsEtQ8QySuCmcwnQ9aKvMAwLP8
 
 The most daunting global health issues right now are the result of interconnected crises: the COVID19 pandemic, global warming, the economic fallouts of the pandemic, political extremism and polarization, and systemic racism. However, we also live in a time of powerful advances in information technology and artificial intelligence that can be applied to these formidable health problems. In this course, we highlight the importance of a multidisciplinary approach to knowledge generation and validation.
 
