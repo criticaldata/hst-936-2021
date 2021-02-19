@@ -16,6 +16,7 @@ Please fill out this [form](https://docs.google.com/forms/d/e/1FAIpQLSc1owRGhvfi
 ## Information
 
 - [Course Schedule](SCHEDULE.md)
+- [Course edX](https://courses.edx.org/courses/course-v1:MITx+HST.936x+1T2021/course/)
 - [Course Projects](PROJECTS.md)
 - [Course Faculty](COURSE_FACULTY.md)
 
