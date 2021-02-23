@@ -1,4 +1,4 @@
-## Project #1: Modeling mobility networks across US counties and states
+## Project A: Modeling mobility networks across US counties and states
 
 ### Keywords: 
 mobility networks, data visualization, biostatistics
@@ -13,7 +13,7 @@ In this project, you will leverage PlaceIQ county-to-county mobility data to qua
 We are looking for students interested in interdisciplinary research, with a background in data visualization in Python (matplotlib, seaborn, etc.). Knowledge of Python is required; experience in procession mobility data will be nice.
 
 
-## Project #2: Extension of Excess Mortality Study at the County Level Across the US
+## Project B: Extension of Excess Mortality Study at the County Level Across the US
 
 ### Context: 
 Coronavirus has taken a major toll on the US, but the full extent of its damage is not yet known. Understanding the extent of undercounting, and how it varies in different parts of the country is key to developing evidence-based solutions for fighting the pandemic and reopening the country. Measuring “excess deaths,” or the number of deaths above the average recorded for the same period in previous years, can provide a window onto the true toll of coronavirus. In order to estimate excess deaths. We have conducted this analysis for Colorado thus far and have work that has laid the foundation for further analysis, but now would like to extend this analysis to other states and incorporate additional data elements.
@@ -25,7 +25,7 @@ With death certificates from 15+ states across the United States (with more in p
 We are looking for students interested in interdisciplinary research, with a background in classical statistical learning techniques, large-scale data processing, interest in policy and collaboration with state DOH and exposure to forecasting methods. Knowledge of Python or R is strongly recommended.
 
 
-## Project #3: Causal Mediation Evaluation of Excess Mortality at the County Level in the United States
+## Project C: Causal Mediation Evaluation of Excess Mortality at the County Level in the United States
 
 ### Context: 
 COVID-19 has led to increased morbidity and mortality among older populations and those with underlying health conditions, but also among those who are unable to access outpatient and emergency services because of the lockdown and surge in acute care demand. Explaining the underlying causes of death, and assessing the geographical heterogeneity of the excess death toll within each state, require careful retrospective analysis of death certificates, including job occupation, industry, and education level information. To that end, we have contacted departments of health across all 50 states and the District of Columbia. We have collected county-level all-cause mortality data for 15 states, and are about to conclude additional partnerships with local departments. Additionally, we compiled news articles from the Media Cloud state-level media aggregator that had specific county mentions since March 1, 2020. Deriving additional insights from infoveillance tools may help provide the narrative behind excess death calculation from COVID-19 at the county level in the US.
@@ -37,7 +37,7 @@ The challenge is to develop a causal-mediation analysis framework to explain: (a
 We are looking for students interested in interdisciplinary research, with a background in statistics, natural language processing, and/or network science. Knowledge of Python or R is required; experience in epidemiology is a plus.
 
 
-## Project #4: Association of COVID-19 Excess Mortality with Job Occupation and Outbreak Centers
+## Project D: Association of COVID-19 Excess Mortality with Job Occupation and Outbreak Centers
 
 ### Context: 
 The risk for developing COVID-19 is different not only across race, ethnicity, income, education levels, etc. but also across different job occupations with varying levels of exposure. For example, preliminary research has shown that cooks, packaging workers, construction workers, and others have had a higher risk of dying from COVID-19.
@@ -49,7 +49,7 @@ The risk for developing COVID-19 is different not only across race, ethnicity, i
 ### Are you interested? 
 We are looking for students interested in interdisciplinary research, with a background in classic machine learning techniques and large-scale data processing. Knowledge of Python or R is required.
 
-## Project #5: Vulnerability Indices - Excess Mortality and its link to Social Vulnerability Index (SVI) and CCVI
+## Project E: Vulnerability Indices - Excess Mortality and its link to Social Vulnerability Index (SVI) and CCVI
 
 ### Context: 
 Coronavirus has taken a major toll on the US, but the full extent of its damage is not yet known. Understanding the extent of undercounting, and how it varies in different parts of the country is key to developing evidence-based solutions for fighting the pandemic and reopening the country. Measuring “excess deaths,” or the number of deaths above the average recorded for the same period in previous years, can provide a window onto the true toll of coronavirus. In order to estimate excess deaths, MIT and Surgo have identified the need for timely reporting of deaths at the local level. 
@@ -66,7 +66,7 @@ This project will answer key questions around vulnerability and excess mortality
 We are looking for students interested in interdisciplinary research, with a background in classic machine learning techniques, large-scale data processing, and experience with census variables (race, ethnicity, income, education, occupation, etc.). Knowledge of Python or R is required.
 
 
-## Project #6: Evaluating Black Market Sales of Purported Treatments for COVID-19
+## Project F: Evaluating Black Market Sales of Purported Treatments for COVID-19
 
 ### Context: 
 Since the advent of Andrew Wakefield’s erroneous 1998 study linking the measles-mumps-rubella vaccine to the emergence of autism, vaccine hesitancy has taken root in the United States – the effects of which have been further exacerbated by misinformation about recently developed vaccine candidates to combat the COVID-19 pandemic. However, vaccine hesitancy (and acceptance!) isn’t uniform across American communities (neither in terms of hesitancy itself nor the motivations for it), which makes targeting interventions to address underlying concerns particularly challenging.
@@ -80,7 +80,7 @@ This project is ongoing with my research group. We are looking for students inte
 Reach out on Twitter to learn more; find me at @maiamajumder
 
 
-## Project #7: Evaluating Black Market Sales of Purported Treatments for COVID-19
+## Project G: Evaluating Black Market Sales of Purported Treatments for COVID-19
 
 ### Context: 
 Fraudulent products and purported cures for COVID-19 have been commonplace in the news media since the beginning of the pandemic. Though not all of products that have been touted as potential cures require a prescription (i.e., Vitamin D), many of them (i.e., hydroxychloroquine, ivermectin, etc.) do – thus necessitating black market purchasing by everyday consumers who wish to acquire them.
@@ -94,7 +94,7 @@ This project is ongoing with my research group. We are looking for students inte
 Reach out on Twitter to learn more; find me at @maiamajumder
 
 
-## Project #8: Early Warning Modeling Systems for COVID-19 Using Wastewater Data
+## Project H: Early Warning Modeling Systems for COVID-19 Using Wastewater Data
 
 ### Context: 
 Evidence suggests that wastewater may provide important RNA-based signals regarding local disease prevalence of COVID-19 prior to surges in identified cases and hospitalizations, though the mechanism of action is not presently well-understood. Other novel data streams for disease surveillance – such as search query data – have faced similar challenges in the early years of their utilization for the development of early warning modeling systems to enable improved resource allocation. These challenges have typically been overcome through the implementation of non-mechanistic – or phenomenological – modeling techniques across multiple data streams.
@@ -108,7 +108,7 @@ This project is ongoing with my research group. We are looking for students inte
 Reach out on Twitter to learn more; find me at @maiamajumder
 
 
-## Project #9: Analyzing Clinical Trials for COVID-19 Using NLP
+## Project J: Analyzing Clinical Trials for COVID-19 Using NLP
 
 ### Context: 
 To date, nearly 5,000 studies regarding COVID-19 have been registered by the U.S. government. A wealth of text-based data is available for each trial, both as free text and as standardized fields. Detailed descriptions of interventions, outcomes, and eligibility criteria are also provided. Many of these trials aim to test the efficacy of various pharmaceutical interventions against COVID-19; however, eligibility restrictions often exclude certain special groups from such studies.
@@ -122,7 +122,7 @@ This project is ongoing with my research group. We are looking for students inte
 Reach out on Twitter to learn more; find me at @maiamajumder
 
 
-## Project #10: NCD Digital Health for Refugees in Kenya
+## Project #K: NCD Digital Health for Refugees in Kenya
 
 ### Context: 
 Digital health for NCD management in refugee populations. MIT Sana, JHU, and Dimagi deploying at International Rescue Committee (IRC) for refugee populations.  Scale up of previous implementation in Lebanon for Syrian refugees.
