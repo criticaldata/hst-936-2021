@@ -122,7 +122,7 @@ This project is ongoing with my research group. We are looking for students inte
 Reach out on Twitter to learn more; find me at @maiamajumder
 
 
-## Project #K: NCD Digital Health for Refugees in Kenya
+## Project K: NCD Digital Health for Refugees in Kenya
 
 ### Context: 
 Digital health for NCD management in refugee populations. MIT Sana, JHU, and Dimagi deploying at International Rescue Committee (IRC) for refugee populations.  Scale up of previous implementation in Lebanon for Syrian refugees.
