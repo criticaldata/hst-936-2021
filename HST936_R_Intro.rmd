@@ -60,6 +60,12 @@ After reading in the data, let's examine common commands to understand what we a
 ```{r}
 #examine a few rows of the data
 head(nyt_data)
+nyt_data[,"fips"]
+nyt_data$fips
+nyt_data %>%
+  select(fips)
+
+
 #interactively view all data
 #View(nyt_data)
 #provide information on variable types of data
@@ -71,13 +77,21 @@ We don't need to use FIPS codes in this exploration because we're looking at a s
 
 We may be curious in examining the total amount of cases and deaths over the course of the pandemic so far, so we aggregate the data and then visualize it. 
 ```{r}
+#this is cumulative data, not discrete, so we should use the latest date, not sum!
+# nyt_data_agg <-
+#   nyt_data %>%
+#   group_by(state) %>%
+#   summarise(total_cases = sum(cases),
+#             total_deaths = sum(deaths)) %>%
+#   ungroup() %>%
+#   mutate(state = tolower(state))
+
 nyt_data_agg <-
   nyt_data %>%
-  group_by(state) %>%
-  summarise(total_cases = sum(cases),
-            total_deaths = sum(deaths)) %>%
-  ungroup() %>%
-  mutate(state = tolower(state))
+  filter(date == max(date)) %>%
+  select(-date) %>%
+  rename(total_deaths = deaths,
+         total_cases = cases)
 nyt_data_agg
 ```
 
