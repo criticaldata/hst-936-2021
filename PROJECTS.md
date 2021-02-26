@@ -66,7 +66,7 @@ This project will answer key questions around vulnerability and excess mortality
 We are looking for students interested in interdisciplinary research, with a background in classic machine learning techniques, large-scale data processing, and experience with census variables (race, ethnicity, income, education, occupation, etc.). Knowledge of Python or R is required.
 
 
-## Project F: Evaluating Black Market Sales of Purported Treatments for COVID-19
+## Project F: Vaccine Hesitancy in the United States
 
 ### Context: 
 Since the advent of Andrew Wakefield’s erroneous 1998 study linking the measles-mumps-rubella vaccine to the emergence of autism, vaccine hesitancy has taken root in the United States – the effects of which have been further exacerbated by misinformation about recently developed vaccine candidates to combat the COVID-19 pandemic. However, vaccine hesitancy (and acceptance!) isn’t uniform across American communities (neither in terms of hesitancy itself nor the motivations for it), which makes targeting interventions to address underlying concerns particularly challenging.
