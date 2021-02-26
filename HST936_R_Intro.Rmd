@@ -1,0 +1,362 @@
+---
+title: "R Training Workshop"
+output:
+  html_document: default
+  pdf_document: default
+---
+# Things to know:
+-   Use markdown for pretty much everything
+\newline
+-   Write your papers in markdown (use citation feature)
+\newline
+-   R is case-sensitive!
+\newline
+-   There are many specialized packages (e.g. comorbidity package makes table from ICD codes), sometimes multiple packages to do the same thing
+\newline
+-   Consider direct SQL queries (instead of downloading CSV files)
+\newline
+-   Recommend Harvard edX R Basics course
+\newline
+-   Use of "=" (setting something equal) vs "==" (evaluating equality)
+\newline
+In this notebook we're going to explore the covidcast package to analyze COVID19 data. We are interested in looking at the relationships between cases and deaths, and also the impact of living in a location with an odd vs. even location code.
+\newline
+We will demonstrate methods prepare the data and create several simple visualizations and regressions for initial exploratory analysis.
+\newline
+First let's set up the environment and get relevant packages that we'll use for analysis. Packages allow you to take advantage of code, more specifically functions, that others have already developed to expedite analysis.
+\newline
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# Check for needed packages and installs from CRAN (central package repository)
+list.of.packages <- c("devtools","dslabs","tidyverse","rvest","schoolmath", "gdata")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+install.packages(new.packages)
+# Checks for covidcast package and installs from github if not found
+
+if ("covidcast" %in% installed.packages()[,"Package"] == F) {devtools::install_github("cmu-delphi/covidcast", ref = "main", subdir = "R-packages/covidcast")} else {print("already installed")}
+
+# Load packages:
+# data analysis functions
+library(dslabs)
+#easy-to-use tidyverse functions, graphing, etc.
+library(tidyverse)
+# web scraping
+library(rvest)
+# simple math commands
+library(schoolmath)
+# get covid data
+library(covidcast)
+```
+
+#Part 1: New York Times Data on Cases and Deaths during the COVID19 Pandemic
+
+We'll begin by what is among the most common scenarios, when you are trying to ingest a comma separated values sheet (single spreadsheet) for analysis. In this case, this csv is hosted on the github repository of the New York Times. 
+```{r}
+nyt_data <- read_csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv")
+```
+
+After reading in the data, let's examine common commands to understand what we are working with. 
+```{r}
+#examine a few rows of the data
+head(nyt_data)
+#interactively view all data
+#View(nyt_data)
+#provide information on variable types of data
+str(nyt_data)
+#provide summary information of data
+summary(nyt_data)
+```
+We don't need to use FIPS codes in this exploration because we're looking at a state level, but for context, ["The Census Bureau has published FIPS codes in census products for more than 30 years. FIPS codes are assigned alphabetically by geographic name for states, counties, core based statistical areas, places, county subdivisions, consolidated cities and all types of American Indian, Alaska Native, and Native Hawaiian (AIANNH) areas. Lists of geographic FIPS codes in census products can be found on the ANSI/FIPS Codes page."](https://www.census.gov/programs-surveys/geography/guidance/geo-identifiers.html)
+
+We may be curious in examining the total amount of cases and deaths over the course of the pandemic so far, so we aggregate the data and then visualize it. 
+```{r}
+nyt_data_agg <-
+  nyt_data %>%
+  group_by(state) %>%
+  summarise(total_cases = sum(cases),
+            total_deaths = sum(deaths)) %>%
+  ungroup() %>%
+  mutate(state = tolower(state))
+nyt_data_agg
+```
+
+
+```{r, fig.height=10}
+ggplot(nyt_data_agg, aes(reorder(state,total_cases), total_cases)) + 
+  geom_bar(stat = "identity", fill = "purple") + 
+  coord_flip() +
+  theme_bw() + 
+  ggtitle("Number of COVID19 Cases")
+```
+
+```{r, fig.height=10}
+ggplot(nyt_data_agg, aes(reorder(state,total_deaths), total_deaths)) + 
+  geom_bar(stat = "identity", fill = "Maroon") + 
+  coord_flip() +
+  theme_bw() + 
+  ggtitle("Number of COVID19 Deaths")
+```
+
+
+```{r, fig.height=10}
+ggplot(nyt_data_agg, aes(reorder(state,total_deaths / total_cases), total_deaths / total_cases)) + 
+  geom_bar(stat = "identity", fill = "steelblue") + 
+  coord_flip() +
+  theme_bw() + 
+  ggtitle("Number of COVID19 Deaths / Number of COVID19 Cases")
+```
+
+```{r}
+cor(nyt_data_agg$total_cases, nyt_data_agg$total_deaths)
+
+nyt_lm <- lm(total_deaths ~ total_cases, nyt_data_agg)
+summary(nyt_lm)
+```
+
+#Part 2: covidcast package exploration
+
+```{r}
+state_signals <-
+covidcast_meta() %>%
+  filter(geo_type == "state")
+state_signals
+
+table(state_signals$data_source)
+```
+
+"These surveys have asked millions of people in the United States whether they (or people they know) are experiencing COVID-like symptoms, allowing us to calculate a “% CLI-in-community” signal for counties across the United States: an estimate of the percentage of people who know someone who is currently sick with COVID-like illness. Because these surveys run daily and aren’t subject to the reporting delays and lag that can affect other data, such as COVID test results, they promise to be a valuable tool to monitor the spread of COVID-19. This post offers a deeper dive into empirical analysis than our past posts about the surveys, examining whether the % CLI-in-community indicators from our two surveys can be used to improve the accuracy of short-term forecasts of county-level COVID-19 case rates." [link to webpage](https://delphi.cmu.edu/blog/2020/09/21/can-symptoms-surveys-improve-covid-19-forecasts/)
+```{r}
+#define start and end dates when calling the API
+start_date <- "2021-02-23"
+end_date <- "2021-02-23"
+
+fb_cli <- suppressMessages(
+  covidcast_signal(data_source = "fb-survey", signal = "smoothed_cli", 
+                   start_day = start_date, end_day = end_date, 
+                   geo_type = "state")
+)
+
+plot(fb_cli, title = paste("New proportion of COVID cases on",start_date))
+
+fb_cli_df <-
+  fb_cli %>%
+  #select relevant columns for simplicity
+  select(geo_value, signal, time_value, value, sample_size, data_source)
+
+head(fb_cli_df)
+```
+
+
+```{r}
+jhu_cases_per100k <- suppressMessages(
+  covidcast_signal(data_source = "jhu-csse", signal = "confirmed_incidence_prop", 
+                   start_day = start_date, end_day = end_date, 
+                   geo_type = "state")
+)
+
+plot(jhu_cases_per100k, title = paste("Incidence of New COVID cases per 100,000 on",start_date))
+
+
+jhu_deaths_per100k <- suppressMessages(
+  covidcast_signal(data_source = "jhu-csse", signal = "deaths_incidence_prop", 
+                   start_day = start_date, end_day = end_date, 
+                   geo_type = "state")
+)
+
+plot(jhu_deaths_per100k, title = paste("Number of COVID deaths per 100,000 on", start_date))
+
+
+
+jhu_cases_per100k_cum <- suppressMessages(
+  covidcast_signal(data_source = "jhu-csse", signal = "confirmed_cumulative_prop", 
+                   start_day = start_date, end_day = end_date, 
+                   geo_type = "state")
+)
+plot(jhu_cases_per100k_cum, title = "Cumulative incidence of COVID cases per 100,000")
+
+jhu_deaths_per100k_cum <- suppressMessages(
+  covidcast_signal(data_source = "jhu-csse", signal = "deaths_cumulative_prop", 
+                   start_day = start_date, end_day = end_date, 
+                   geo_type = "state")
+)
+plot(jhu_deaths_per100k_cum, title = "Cumulative number of deaths from COVID per 100,000")
+
+
+```
+
+
+Merge dataframes together to look at relationships between variables. Create [grouping of states from Census Bureau](https://www2.census.gov/geo/pdfs/reference/GARM/Ch6GARM.pdf) 
+```{r}
+merged_df <-
+  fb_cli_df %>%
+  inner_join(jhu_cases_per100k, by = c("geo_value","time_value"), suffix = c("_fb","_jhu")) %>%
+  #let's apply groupings listed from the census so that we can understand broader geographical patterns
+  mutate(subregion = case_when(geo_value %in% c("ak", "hi", "wa", "or", "ca") ~ "Pacific",
+                            geo_value %in% c("mt", "id", "wy", "nv", "ut", "co", "az", "nm") ~ "Mountain",
+                            geo_value %in% c("nd", "sd", "ne", "ks", "mn", "ia", "mo") ~ "West North Central",
+                            geo_value %in% c("ok", "ar", "tx", "la") ~ "West South Central",
+                            geo_value %in% c("wi", "mi", "il", "in", "oh") ~ "East North Central",
+                            geo_value %in% c("ky", "tn", "ms", "al") ~ "East South Central",
+                            geo_value %in% c("me", "nh", "vt", "ma", "ct", "ri") ~ "New England",
+                            geo_value %in% c("ny", "pa", "nj") ~ "Middle Atlantic",
+                            geo_value %in% c("de", "md", "dc", "wv", "va", "nc", "sc", "ga", "fl") ~ "South Atlantic")) %>%
+  mutate(region = case_when(subregion %in% c("Pacific", "Mountain") ~ "West",
+                            subregion %in% c("West North Central", "East North Central") ~ "Midwest",
+                            subregion %in% c("West South Central", "East South Central", "South Atlantic") ~ "South",
+                            subregion %in% c("Middle Atlantic", "New England") ~ "Northeast"))
+
+head(merged_df)
+
+#cor(merged_df$value_fb, merged_df$value_jhu)
+#summary(lm(value_jhu ~ value_fb, data = merged_df))
+
+ggplot(merged_df, aes(subregion, value_fb)) +
+  geom_boxplot() +
+  coord_flip() +
+  theme_bw()
+
+```
+
+#Part 3: Cases and Deaths Analysis
+
+## Retrieve data
+```{r}
+#Explanatory table of parameters
+queries_url <- "https://cmu-delphi.github.io/delphi-epidata/api/covidcast.html#constructing-api-queries"
+queries_table <- read_html(queries_url)
+queries_nodes <- queries_table %>% html_nodes("table")
+queries <- queries_nodes[[1]] %>% html_table %>% data.frame() %>% print()
+```
+
+```{r}
+#Explanatory table of types of signals
+signal_url <- "https://cmu-delphi.github.io/delphi-epidata/api/covidcast_signals.html"
+signal_table <- read_html(signal_url)
+signal_nodes <- signal_table %>% html_nodes("table")
+signal <- signal_nodes[[1]] %>% html_table %>% data.frame() %>% print()
+```
+
+```{r}
+# Getting data
+# (source, signal, start_day, end_day)
+cases <- suppressMessages(covidcast_signal("indicator-combination", "confirmed_7dav_incidence_prop", start_day = "2020-03-13",end_day = "2020-05-13"))
+deaths <- suppressMessages(covidcast_signal("indicator-combination", "deaths_7dav_incidence_prop", start_day = "2020-03-13",end_day = "2020-05-13"))
+```
+
+```{r}
+# Select individual columns (can either add or remove columns)
+cases_selected <- cases %>% select(geo_value, time_value, value)  
+deaths_selected <- select(deaths, -(data_source), -(signal), -(issue), -(lag),-(stderr), -(sample_size))
+```
+
+```{r}
+# Filter for cases from March and April
+cases_selected_filtered <-
+  cases_selected %>%
+    filter(time_value < "2020-05-01")
+deaths_selected_filtered <-
+  deaths_selected %>%
+    filter(time_value < "2020-05-01") 
+```
+
+```{r}
+# Get average cases and deaths by day
+avg_cases <- cases_selected_filtered %>% group_by(time_value) %>% summarize(mean_cases = mean(value))  
+avg_deaths <- deaths_selected_filtered %>% group_by(time_value) %>% summarize(mean_deaths = mean(value))
+```
+
+```{r}
+# Merge selected/filtered with average for day
+cases_merged <- left_join(cases_selected_filtered, avg_cases, by = "time_value")  
+deaths_merged <- deaths_selected_filtered %>% left_join(avg_deaths, by = "time_value")
+```
+
+```{r}
+# Add a column for whether geo_value is odd or even (need to change geo_value to numeric)
+cases_odd_even <- cases_merged %>% mutate(odd = ifelse(is.even(as.numeric(geo_value)),0,1))  
+deaths_odd_even <- deaths_merged %>% mutate(odd = ifelse(is.even(as.numeric(geo_value)),0,1))
+```
+
+```{r}
+# Rename geo_value
+cases_odd_even <- rename(cases_odd_even, "location" = "geo_value")   
+deaths_odd_even <- rename(deaths_odd_even, "location" = "geo_value") 
+```
+
+```{r}
+# Rename "value" column to cases and deaths
+cases_odd_even <- rename(cases_odd_even, "cases" = "value")  
+deaths_odd_even <- rename(deaths_odd_even, "deaths" = "value") 
+```
+
+```{r}
+#Select columns for location, time_value, and deaths
+deaths_3column <- select(deaths_odd_even, location, time_value, deaths)  
+```
+
+```{r}
+#Make a vector of unique time-values
+time_value_vector <- c(unique(deaths_3column$time_value))
+```
+
+```{r}
+#Join two tables
+comp <- left_join(cases_odd_even, deaths_3column, by = c("location","time_value"))  
+```
+
+```{r}
+# Create a scatter plot of deaths vs. cases
+comp %>% ggplot(aes(y = deaths, x = cases))  +  geom_point()
+```
+
+```{r}
+# Factor by odd vs. even
+comp %>% ggplot(aes(y = deaths, x = log(cases), color = factor(odd)))  +  geom_point()
+```
+
+```{r}
+# Change the scale
+comp %>% ggplot(aes(y = deaths, x = log(cases), color = factor(odd)))  +  geom_point()  +  scale_x_continuous(limits = c(-5, 5))
+```
+
+```{r}
+# Add a line of best fit
+comp %>% ggplot(aes(y = deaths, x = log(cases), color = factor(odd)))  +  geom_point()  +  scale_x_continuous(limits = c(-5, 5))  +  geom_abline()
+```
+
+```{r}
+# Add a slope line with specified intercept and slope
+comp %>% ggplot(aes(y = deaths, x = log(cases), color = factor(odd))) + geom_point() + scale_x_continuous(limits = c(-5, 5))  +  geom_abline()  +  geom_abline(intercept = 10, slope = -1)
+```
+
+```{r}
+# Linear Regression of deaths vs. cases, controlling for mean cases on that day
+linreg <- lm(deaths~cases+mean_cases,data = comp) %>% summary()
+```
+
+```{r}
+# Extract the "cases" p-value and coefficient from your regression [row, column]
+case_pvalue <- linreg$coefficients[2,4] %>% print()
+case_coef <- linreg$coefficients[2,1] %>% print()
+```
+
+```{r}
+# Create boxplots for deaths, by odd and even
+comp %>% ggplot(aes(factor(odd), log(deaths))) + geom_boxplot()
+```
+
+```{r}
+# Create smooth density plots for cases, by odd and even
+comp %>% ggplot(aes(x = log(deaths), group = odd, fill = factor(odd))) + geom_density(alpha = 0.2)
+```
+
+```{r}
+# Create logistic regression line with ratio of deaths:cases x deaths
+comp %>% ggplot(aes(y = (deaths/cases), x = deaths)) + geom_smooth()
+```
+
+```{r}
+# Create logistic regression line with ratio of deaths:cases x deaths, glm method
+comp %>% ggplot(aes(y = (deaths/cases), x = deaths)) + geom_smooth(method = "glm")
+```
